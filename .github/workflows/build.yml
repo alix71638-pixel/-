@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Install Dependencies
-        run: npm install --force  # ضفنا force عشان نتخطى مشاكل النسخ
+        run: npm install --force
 
       - name: Build Web Project
         run: npm run build
@@ -32,7 +32,8 @@ jobs:
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug --stacktrace # عشان لو فشل يقولنا السبب الحقيقي
+          ./gradlew clean # خطوة التنظيف السحرية
+          ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
