@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">bor3y</string>
+    <string name="title_activity_main">bor3y</string>
+    <string name="package_name">com.bor3y.game</string>
+    <string name="custom_url_scheme">com.bor3y.game</string>
+</resources>
